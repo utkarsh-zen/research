@@ -62,8 +62,7 @@ public class TxtFrmImg extends TelegramLongPollingBot{
 			{
 				SendMessage message = new SendMessage() // Create a message object object
 						.setChatId(chat_id)
-						.setText("Give me image not text like this "+update.getMessage().getText());
-
+						.setText("Give me image not text, like this "+update.getMessage().getText());
 				execute(message); // Sending our message object to user
 			}
 			catch(TelegramApiException taexc)
